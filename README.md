@@ -17,6 +17,7 @@ Solutions based on the uploaded Category C practice PDF and the Busiest Bus Row 
 | 9. Leap Year Detector | [LeapYearDetector.java](Assignment/M9/LeapYearDetector.java) |
 | 10. Student Result Card Generator | [StudentResultCardGenerator.java](Assignment/M10/StudentResultCardGenerator.java) |
 | Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](DutyRosterRotation.java) |
+| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |
 | Extra. Busiest Bus Row | [BusiestBusRow.java](Assignment/Extra/BusiestBusRow.java) |
 
 ### Compile and run
@@ -101,3 +102,13 @@ The Java solution is in [DutyRosterRotation.java](DutyRosterRotation.java).
 - **Space complexity:** `O(n)`, because a new array stores the rotated roster.
 - Applying `k % n` removes complete rotations. Rotating one place at a time `k` times can take `O(n × k)` time, which is slow when `k` is very large.
 - Sample outputs for `k = 2` and `k = 7`: `[D, E, A, B, C]`.
+
+
+## Problem 4 — Exam Score Band Counter
+
+The Java solution is in [ExamScoreBandCounter.java](ExamScoreBandCounter.java). It uses two modified binary searches: one finds the first score greater than or equal to `low`, and the other finds the first score strictly greater than `high`. Subtracting these positions gives the number of scores in the inclusive band.
+
+- **Linear scan:** `O(n)` time and `O(1)` auxiliary space.
+- **Binary-search solution:** `O(log n)` time and `O(1)` auxiliary space.
+- **Duplicates at the edges:** Find the *first* score `>= low` so every copy of `low` is counted, and the *first* score `> high` so every copy of `high` is included. A regular binary search that stops at any matching element could miss duplicates.
+- Sample outputs: `6` and `0`.
