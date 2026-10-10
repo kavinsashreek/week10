@@ -16,7 +16,7 @@ Solutions based on the uploaded Category C practice PDF and the Busiest Bus Row 
 | 8. Student Grade Assignment | [StudentGradeAssignment.java](Assignment/M8/StudentGradeAssignment.java) |
 | 9. Leap Year Detector | [LeapYearDetector.java](Assignment/M9/LeapYearDetector.java) |
 | 10. Student Result Card Generator | [StudentResultCardGenerator.java](Assignment/M10/StudentResultCardGenerator.java) |
-| Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](Assignment/M11/DutyRosterRotation.java) |
+| Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](DutyRosterRotation.java) |
 | Extra. Busiest Bus Row | [BusiestBusRow.java](Assignment/Extra/BusiestBusRow.java) |
 
 ### Compile and run
@@ -95,7 +95,7 @@ Sum each row and update the best row only when the new total is strictly greater
 
 ## Problem 8 — Duty Roster Rotation
 
-The Java solution is in [DutyRosterRotation.java](Assignment/M11/DutyRosterRotation.java).
+The Java solution is in [DutyRosterRotation.java](DutyRosterRotation.java).
 
 - **Time complexity:** `O(n)`, because each name is processed once.
 - **Space complexity:** `O(n)`, because a new array stores the rotated roster.
