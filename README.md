@@ -17,7 +17,9 @@ Solutions based on the uploaded Category C practice PDF and the Busiest Bus Row 
 | 9. Leap Year Detector | [LeapYearDetector.java](Assignment/M9/LeapYearDetector.java) |
 | 10. Student Result Card Generator | [StudentResultCardGenerator.java](Assignment/M10/StudentResultCardGenerator.java) |
 | Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](DutyRosterRotation.java) |
-| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |\n| Problem 7. Second-Best Score | [SecondBestScore.java](SecondBestScore.java) |\n| Problem 6. Class Attendance Tracker | [ClassAttendanceTracker.java](ClassAttendanceTracker.java) |
+| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |
+| Problem 7. Second-Best Score | [SecondBestScore.java](SecondBestScore.java) |
+| Problem 6. Class Attendance Tracker | [ClassAttendanceTracker.java](ClassAttendanceTracker.java) |
 | Extra. Busiest Bus Row | [BusiestBusRow.java](Assignment/Extra/BusiestBusRow.java) |
 
 ### Compile and run
