@@ -17,7 +17,7 @@ Solutions based on the uploaded Category C practice PDF and the Busiest Bus Row 
 | 9. Leap Year Detector | [LeapYearDetector.java](Assignment/M9/LeapYearDetector.java) |
 | 10. Student Result Card Generator | [StudentResultCardGenerator.java](Assignment/M10/StudentResultCardGenerator.java) |
 | Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](DutyRosterRotation.java) |
-| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |\n| Problem 7. Second-Best Score | [SecondBestScore.java](SecondBestScore.java) |
+| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |\n| Problem 7. Second-Best Score | [SecondBestScore.java](SecondBestScore.java) |\n| Problem 6. Class Attendance Tracker | [ClassAttendanceTracker.java](ClassAttendanceTracker.java) |
 | Extra. Busiest Bus Row | [BusiestBusRow.java](Assignment/Extra/BusiestBusRow.java) |
 
 ### Compile and run
@@ -120,6 +120,18 @@ The Java solution is in [SecondBestScore.java](SecondBestScore.java). It scans t
 
 - **Time complexity:** `O(n)`, because each score is checked once.
 - **Space complexity:** `O(1)`, because only two variables are used.
-- **Sorting comparison:** Sorting first typically takes `O(n log n)) time, then you still need to search backward for a distinct score. The one-pass solution is faster asymptotically and uses constant extra space.
+- **Sorting comparison:** Sorting first typically takes `O(n log n)` time, then you still need to search backward for a distinct score. The one-pass solution is faster asymptotically and uses constant extra space.
 - Duplicate highest scores are skipped as candidates for second place; if no lower distinct score exists, the function returns `-1`.
 - Sample outputs: `78` and `-1`.
+
+
+## Problem 6 — Class Attendance Tracker
+
+The Java solution is in [ClassAttendanceTracker.java](ClassAttendanceTracker.java). A single pass counts each present day and tracks the current and longest consecutive attendance streak. When an absent day (`0`) appears, the current streak resets to zero.
+
+- **Time complexity:** `O(n)`, because each day is processed once.
+- **Space complexity:** `O(1)` auxiliary space; the method returns a two-element result array.
+- **Single pass:** Yes. The present-day count and longest streak are both calculated during the same traversal.
+- Sample outputs:
+  - `Present: 6, Longest streak: 3`
+  - `Present: 0, Longest streak: 0`
