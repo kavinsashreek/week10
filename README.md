@@ -17,7 +17,7 @@ Solutions based on the uploaded Category C practice PDF and the Busiest Bus Row 
 | 9. Leap Year Detector | [LeapYearDetector.java](Assignment/M9/LeapYearDetector.java) |
 | 10. Student Result Card Generator | [StudentResultCardGenerator.java](Assignment/M10/StudentResultCardGenerator.java) |
 | Problem 8. Duty Roster Rotation | [DutyRosterRotation.java](DutyRosterRotation.java) |
-| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |
+| Problem 4. Exam Score Band Counter | [ExamScoreBandCounter.java](ExamScoreBandCounter.java) |\n| Problem 7. Second-Best Score | [SecondBestScore.java](SecondBestScore.java) |
 | Extra. Busiest Bus Row | [BusiestBusRow.java](Assignment/Extra/BusiestBusRow.java) |
 
 ### Compile and run
@@ -112,3 +112,14 @@ The Java solution is in [ExamScoreBandCounter.java](ExamScoreBandCounter.java). 
 - **Binary-search solution:** `O(log n)` time and `O(1)` auxiliary space.
 - **Duplicates at the edges:** Find the *first* score `>= low` so every copy of `low` is counted, and the *first* score `> high` so every copy of `high` is included. A regular binary search that stops at any matching element could miss duplicates.
 - Sample outputs: `6` and `0`.
+
+
+## Problem 7 — Second-Best Score
+
+The Java solution is in [SecondBestScore.java](SecondBestScore.java). It scans the array once while maintaining the highest and second-highest **distinct** scores. It does not sort or modify the input array.
+
+- **Time complexity:** `O(n)`, because each score is checked once.
+- **Space complexity:** `O(1)`, because only two variables are used.
+- **Sorting comparison:** Sorting first typically takes `O(n log n)) time, then you still need to search backward for a distinct score. The one-pass solution is faster asymptotically and uses constant extra space.
+- Duplicate highest scores are skipped as candidates for second place; if no lower distinct score exists, the function returns `-1`.
+- Sample outputs: `78` and `-1`.
